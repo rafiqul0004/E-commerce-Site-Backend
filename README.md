@@ -20,7 +20,7 @@ EzzyMart is an E-commerce platform backend developed using Django REST framework
 ```markdown
 EzzyMart/
 │
-├── ezzy_mart/                # Main Django project folder
+├── Ezzymart/                # Main Django project folder
 │   ├── __init__.py           # Package initialization
 │   ├── settings.py           # Project settings
 │   ├── urls.py               # Project URLs
@@ -58,7 +58,7 @@ EzzyMart/
 │   └── ...                   # Image files
 │
 ├── requirements.txt          # Project dependencies
-└── db.sql                    # SQL file for database schema
+└── ezzyMart_Database.sql                    # SQL file for database schema
 ```
 
 ## 📥 Installation
@@ -90,20 +90,20 @@ pip install -r requirements.txt
 #### Create a Database:
 1. Open **pgAdmin4**.
 2. Right-click on **"Databases"** > **"Create"** > **"Database"**.
-3. Name the database (e.g., `ezzymart_db`).
+3. Name the database (e.g., `ezzymart`).
 
 #### Execute SQL Script:
 1. Open the **SQL editor** in pgAdmin4.
-2. Load the `db.sql` file provided in the project folder.
+2. Load the `ezzyMart_Database.sql` file provided in the project folder.
 3. Execute the script to create the required tables.
 
 ## ⚙️ Step 5: Update Django Settings
-In `ezzy_mart/settings.py`, update the DATABASES configuration:
+In `EzzyMart/settings.py`, update the DATABASES configuration:
 ```python
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ezzymart_db',  # your database name
+        'NAME': 'ezzymart',  # your database name
         'USER': 'your_username',  # your PostgreSQL username
         'PASSWORD': 'your_password',  # your PostgreSQL password
         'HOST': 'localhost',
