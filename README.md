@@ -17,7 +17,6 @@ EzzyMart is an E-commerce platform backend developed using Django REST framework
 - **pgAdmin4**
 
 ## 📁 Project Structure
-```
 ```markdown
 EzzyMart/
 │
