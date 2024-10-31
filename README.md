@@ -1,4 +1,4 @@
-```markdown
+
 # 🛒 EzzyMart - E-commerce Online Platform
 
 ## 📦 Project Overview
